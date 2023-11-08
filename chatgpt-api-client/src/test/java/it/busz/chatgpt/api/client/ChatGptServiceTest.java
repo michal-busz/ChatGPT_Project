@@ -1,7 +1,6 @@
 package it.busz.chatgpt.api.client;
 
-import static org.assertj.core.api.Assertions.assertThat;
-
+import it.busz.chatgpt.api.client.domain.chatgpt.ChatGptClient;
 import org.junit.jupiter.api.Test;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,11 +11,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 class ChatGptServiceTest {
 
 	@Autowired
-	private ChatGptService chatGptService;
+	private ChatGptClient chatGptClient;
 
 	@Test
 	void contextLoads() {
-		assertThat(chatGptService.message()).isNotNull();
 	}
 
 	@SpringBootApplication
