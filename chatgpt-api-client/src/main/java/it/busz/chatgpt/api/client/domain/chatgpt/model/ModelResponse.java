@@ -1,4 +1,4 @@
-package it.busz.chatgpt.api.client.domain.chatgpt.external;
+package it.busz.chatgpt.api.client.domain.chatgpt.model;
 
 import java.util.List;
 

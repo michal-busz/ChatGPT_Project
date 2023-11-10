@@ -15,7 +15,7 @@ public class ChatGptClient {
 
     public String test(){
         final var models = chatGptApi.getModels();
-        var builder = new StringBuilder();
+        final var builder = new StringBuilder();
         for(final var model : models){
             builder.append(model.id());
         }
