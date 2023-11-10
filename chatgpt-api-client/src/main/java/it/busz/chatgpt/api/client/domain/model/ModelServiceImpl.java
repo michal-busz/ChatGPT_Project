@@ -1,10 +1,11 @@
 package it.busz.chatgpt.api.client.domain.model;
 
-import it.busz.chatgpt.api.client.domain.model.api.ModelDto;
+import it.busz.chatgpt.api.client.domain.model.api.Model;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;
+import java.util.List;
 
 @Service
 @Slf4j
@@ -16,16 +17,14 @@ class ModelServiceImpl implements ModelService {
     }
 
     @Override
-    public Collection<ModelDto> getModels() {
+    public List<Model> getModels() {
         final var response = modelClient.getModels();
-        final var models = response.data();
-        return ModelMapper.modelToDto(models);
+        return response.data();
     }
 
     @Override
-    public ModelDto getModel(String modelId){
-         final var model = modelClient.getModel(modelId);
-        return ModelMapper.modelToDto(model);
+    public Model getModel(String modelId) {
+        return modelClient.getModel(modelId);
     }
 
     @Override
