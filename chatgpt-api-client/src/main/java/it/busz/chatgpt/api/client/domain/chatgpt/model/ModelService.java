@@ -6,4 +6,6 @@ import java.util.Collection;
 
 public interface ModelService {
     Collection<ModelDto> getModels();
+    ModelDto getModel(String modelId);
+    void deleteModel(String modelId);
 }

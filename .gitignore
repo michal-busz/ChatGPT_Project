@@ -41,3 +41,4 @@ README.html
 
 # Custom
 chatgpt-web-application/src/main/resources/application-dev.properties
+chatgpt-api-client/src/test/resources/application-test.properties

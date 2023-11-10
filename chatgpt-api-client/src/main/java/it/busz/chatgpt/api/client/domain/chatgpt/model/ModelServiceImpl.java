@@ -22,4 +22,16 @@ class ModelServiceImpl implements ModelService {
         return ModelMapper.mapToDto(models);
     }
 
+    @Override
+    public ModelDto getModel(String modelId){
+         final var model = modelClient.getModel(modelId);
+        return ModelMapper.mapToDto(model);
+    }
+
+    @Override
+    public void deleteModel(String modelId) {
+        modelClient.deleteModel(modelId);
+        log.info("Successfully deleted model {}", modelId);
+    }
+
 }
