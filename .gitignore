@@ -38,3 +38,6 @@ dependency-reduced-pom.xml
 mem*.db
 
 README.html
+
+# Custom
+chatgpt-web-application/src/main/resources/application-dev.properties
