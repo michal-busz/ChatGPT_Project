@@ -1,6 +1,6 @@
-package it.busz.chatgpt.api.client.domain.chatgpt.model;
+package it.busz.chatgpt.api.client.domain.model;
 
-import it.busz.chatgpt.api.client.domain.chatgpt.api.ModelDto;
+import it.busz.chatgpt.api.client.domain.model.api.ModelDto;
 
 import java.util.Collection;
 

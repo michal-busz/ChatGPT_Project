@@ -1,6 +1,6 @@
-package it.busz.chatgpt.api.client.domain.chatgpt.model;
+package it.busz.chatgpt.api.client.domain.model;
 
-import it.busz.chatgpt.api.client.domain.chatgpt.api.ModelDto;
+import it.busz.chatgpt.api.client.domain.model.api.ModelDto;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
@@ -9,13 +9,13 @@ import java.util.List;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 class ModelMapper {
 
-    static List<ModelDto> mapToDto(List<Model> models) {
+    static List<ModelDto> modelToDto(List<Model> models) {
         return models.stream()
-                .map(ModelMapper::mapToDto)
+                .map(ModelMapper::modelToDto)
                 .toList();
     }
 
-    static ModelDto mapToDto(Model model) {
+    static ModelDto modelToDto(Model model) {
         return new ModelDto(
                 model.id(),
                 model.object(),

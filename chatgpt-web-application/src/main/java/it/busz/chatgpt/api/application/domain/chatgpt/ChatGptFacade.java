@@ -1,6 +1,6 @@
 package it.busz.chatgpt.api.application.domain.chatgpt;
 
-import it.busz.chatgpt.api.client.domain.chatgpt.ChatGptClient;
+import it.busz.chatgpt.api.client.domain.ChatGptClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

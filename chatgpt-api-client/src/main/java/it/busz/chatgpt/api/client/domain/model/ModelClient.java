@@ -1,4 +1,4 @@
-package it.busz.chatgpt.api.client.domain.chatgpt.model;
+package it.busz.chatgpt.api.client.domain.model;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

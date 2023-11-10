@@ -1,4 +1,4 @@
-package it.busz.chatgpt.api.client.domain.chatgpt.api;
+package it.busz.chatgpt.api.client.domain.model.api;
 
 import java.time.Instant;
 
