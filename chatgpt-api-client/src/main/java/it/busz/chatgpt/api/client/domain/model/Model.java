@@ -1,4 +1,4 @@
-package it.busz.chatgpt.api.client.domain.chatgpt.model;
+package it.busz.chatgpt.api.client.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

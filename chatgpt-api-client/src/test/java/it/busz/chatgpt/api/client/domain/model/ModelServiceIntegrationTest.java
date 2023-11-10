@@ -1,6 +1,7 @@
-package it.busz.chatgpt.api.client.domain.chatgpt.model;
+package it.busz.chatgpt.api.client.domain.model;
 
-import it.busz.chatgpt.api.client.domain.chatgpt.api.ModelDto;
+import it.busz.chatgpt.api.client.domain.model.api.ModelDto;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,7 +38,7 @@ class ModelServiceIntegrationTest {
                 .filter(m -> EXPECTED_MODEL_ID.equals(m.id()))
                 .findFirst()
                 .orElseThrow();
-        assertEquals(EXPECTED_MODEL, model);
+        Assertions.assertEquals(EXPECTED_MODEL, model);
     }
 
     @Test
@@ -46,7 +47,7 @@ class ModelServiceIntegrationTest {
         final var model = modelService.getModel(EXPECTED_MODEL_ID);
 
         // then
-        assertEquals(EXPECTED_MODEL, model);
+        Assertions.assertEquals(EXPECTED_MODEL, model);
     }
 
     @Test
