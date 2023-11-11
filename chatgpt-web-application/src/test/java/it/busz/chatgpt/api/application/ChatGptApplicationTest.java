@@ -12,6 +12,7 @@ class ChatGptApplicationTest {
 	@Autowired
 	private ChatGptFacade chatGptFacade;
 
+	@SuppressWarnings("java:S2699")
 	@Test
 	void contextLoads() {
 	}

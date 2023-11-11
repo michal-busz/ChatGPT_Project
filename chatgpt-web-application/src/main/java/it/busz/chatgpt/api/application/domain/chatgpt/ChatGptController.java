@@ -13,7 +13,7 @@ class ChatGptController {
     }
 
     @GetMapping("/test")
-    public ResponseEntity<String> test(){
+    public ResponseEntity<String> test() {
         return ResponseEntity.ok(chatGptFacade.test());
     }
 }
