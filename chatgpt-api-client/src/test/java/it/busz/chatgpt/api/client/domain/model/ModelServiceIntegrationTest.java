@@ -1,6 +1,6 @@
 package it.busz.chatgpt.api.client.domain.model;
 
-import it.busz.chatgpt.api.client.domain.model.api.ModelDto;
+import it.busz.chatgpt.api.client.domain.model.api.Model;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -20,7 +20,7 @@ class ModelServiceIntegrationTest {
     @Autowired
     private ModelService modelService;
     private final static String EXPECTED_MODEL_ID = "dall-e-3";
-    private final static ModelDto EXPECTED_MODEL = new ModelDto(
+    private final static Model EXPECTED_MODEL = new Model(
             EXPECTED_MODEL_ID,
             "model",
             Instant.ofEpochSecond(1698785189),

@@ -14,8 +14,6 @@ public class ChatGptClient {
     }
 
     public String test() {
-        final var models = modelService.getModels();
-        final var model = modelService.getModel(models.stream().toList().get(0).id());
-        return model.toString();
+        return modelService.getModels().toString();
     }
 }

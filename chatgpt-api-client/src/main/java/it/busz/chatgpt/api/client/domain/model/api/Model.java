@@ -1,10 +1,10 @@
-package it.busz.chatgpt.api.client.domain.model;
+package it.busz.chatgpt.api.client.domain.model.api;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.time.Instant;
 
-record Model(
+public record Model(
         String id,
         String object,
         Instant created,
